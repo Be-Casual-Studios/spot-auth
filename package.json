@@ -38,7 +38,9 @@
     }
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "open": "^10.0.0"
@@ -68,7 +70,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "happy-dom": "^20.9.0",
     "rollup": "^4.60.4",
-    "rollup-plugin-esbuild": "^6.2.1"
+    "rollup-plugin-esbuild": "^6.2.1",
+    "vitest": "^4.1.6"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "name": "spot-auth",
+  "version": "0.1.0",
+  "description": "Zero-friction Spotify OAuth for Node.js scripts and web apps",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/core/SpotAuth.js",
+      "require": "./dist/core/SpotAuth.cjs"
+    },
+    "./node": {
+      "import": "./src/node/index.js",
+      "require": "./dist/node/index.cjs"
+    },
+    "./react": {
+      "import": "./src/react/index.js",
+      "require": "./dist/react/index.cjs"
+    },
+    "./react-router": {
+      "import": "./src/react-router/index.jsx",
+      "require": "./dist/react-router/index.cjs"
+    },
+    "./webcomponent": {
+      "import": "./src/webcomponent/spot-auth-barrier.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "open": "^10.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "react-router-dom": ">=6"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "react-router-dom": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "spotify",
+    "oauth",
+    "authentication",
+    "pkce",
+    "react"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^4.60.4",
+    "rollup-plugin-esbuild": "^6.2.1"
+  }
+}

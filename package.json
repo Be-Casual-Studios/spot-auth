@@ -3,6 +3,19 @@
   "version": "0.1.0",
   "description": "Zero-friction Spotify OAuth for Node.js scripts and web apps",
   "type": "module",
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Be-Casual-Studios/spot-auth.git"
+  },
+  "homepage": "https://github.com/Be-Casual-Studios/spot-auth#readme",
+  "bugs": {
+    "url": "https://github.com/Be-Casual-Studios/spot-auth/issues"
+  },
   "exports": {
     ".": {
       "import": "./src/core/SpotAuth.js",
